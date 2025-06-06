@@ -1,0 +1,127 @@
+:root {
+    /* primary colors */
+    --green: hsl(158, 36%, 37%);
+    --dark-green: hsl(158, 42%, 18%);
+    /* Neutral */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+    /* font properties */
+    --body-font: "Montserrat", sans-serif;
+    --head-font: "Fraunces", serif;
+    --paragraph: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: var(--cream);
+    font-family: var(--body-font);
+}
+main {
+    margin: 3rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.product {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem 1rem 0 0;
+}
+.details {
+    padding: 3rem;
+
+}
+
+.category {
+    padding: .3rem 0;
+    letter-spacing: .3rem;
+    color: var(--grey);
+}
+
+h1 {
+    font-family: var(--head-font);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: var(--paragraph);
+    color: var(--grey);
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.discount {
+    color: var(--green);
+    font-family: var(--head-font);
+    font-weight: 700;
+}
+.price {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    padding: 1.2rem 0;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        background-color: var(--cream);
+        justify-content: center;
+        margin-top: 200px;
+    }
+    .details {
+        max-width: 400px;
+        height: 500px;
+        background-color: var(--white);
+        border-radius: 0 1rem 1rem 0;
+    }
+    .product {
+        height: 500px;
+        border-radius: 1rem 0 0 1rem ;
+        min-width: 180px;
+    }
+    button {
+        display: inline-block;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: var(--dark-green);
+    }
+
+}
+
